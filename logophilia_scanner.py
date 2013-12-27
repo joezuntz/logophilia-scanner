@@ -41,7 +41,7 @@ for submission in top:
 	# try parsing into the standard logophilia form - a colon separating
 	# the word and definition
 	try:
-		word, definition = submission.title.split(':', max_split=1)
+		word, definition = submission.title.split(':', 1)
 	#some of the top 100 are not in the correct form.
 	#record them but then just ignore.
 	except ValueError:
