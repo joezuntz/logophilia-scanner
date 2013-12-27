@@ -82,7 +82,7 @@ html.write('<TBODY>')
 
 #Loop through our defintions and put them all in the table
 for (word, definition, submitter) in valid_submissions:
-	html.write(u'<TR><TD>{0}</TD><TD>{1}</TD><TD>{2}</TD></TR>'.format(word, definition, submitter))
+	html.write(u'<TR><TD>{0}</TD><TD>{1}</TD><TD>{2}</TD></TR>\n'.format(word, definition, submitter))
 
 #finish up
 html.write('</TBODY>')
