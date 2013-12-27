@@ -69,6 +69,7 @@ for submission in top:
 #have international characters
 html = codecs.open('log.html','w', 'utf-8')
 #Write the header 
+html.write('<HTML>')
 html.write('<HEAD>\n')
 html.write('<TITLE>Logophilia Dump</TITLE>\n')
 html.write('<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\n')
@@ -87,4 +88,6 @@ for (word, definition, submitter) in valid_submissions:
 #finish up
 html.write('</TBODY>')
 html.write('</TABLE>')
+html.write('</BODY>')
+html.write('</HTML>')
 html.close()
